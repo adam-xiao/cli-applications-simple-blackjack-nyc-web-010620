@@ -34,7 +34,7 @@ def hit?(card_total)
   prompt_user
   get_user_input
 
-  if !get_user_input.include?(inputs)
+  if !inputs.include?(getu)
     invalid_command
     prompt_user
     get_user_input
