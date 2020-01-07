@@ -23,9 +23,9 @@ def end_game(total)
 end
 
 def initial_round
-  total = deal_card
-  total = total + deal_card
-  puts "Your card adds up to #{total}"
+  first_hand = deal_card + deal_card
+  display_card_total(first_hand)
+  return first_hand
 end
 
 def hit?
