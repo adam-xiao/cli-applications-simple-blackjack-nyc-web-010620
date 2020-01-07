@@ -29,12 +29,11 @@ def initial_round
 end
 
 def hit?(card_total)
-  inputs = ["h", "s"]
-  card_total
+  inputs_allowed = ["h", "s"]
   prompt_user
-  get_user_input
+  player_input = get_user_input
 
-  if !inputs.include?(get_user_input)
+  if !inputs.include?(player_input)
     invalid_command
     prompt_user
     get_user_input
